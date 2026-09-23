@@ -48,12 +48,12 @@ Burn severity classification using standard USGS thresholds ($\Delta\text{NBR}$)
 ```text
 sentinel2-nbr-canopy-collapse/
 ├── data/
-│   └── raw/                   <-- Study area bounding box / GeoJSON
+│   └── raw/                   
 ├── notebooks/
-│   └── central_kalimantan_nbr_analysis.ipynb  <-- Main Google Colab Notebook
+│   └── central_kalimantan_nbr_analysis.ipynb 
 ├── outputs/
-│   ├── figures/               <-- Rendered 3D plots & dNBR maps
-│   └── tables/                <-- Statistical breakdown CSVs
+│   ├── figures/              
+│   └── tables/                
 ├── .gitignore
 ├── LICENSE
 └── README.md
