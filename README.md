@@ -8,9 +8,16 @@ Using **Sentinel-2 multispectral imagery (NIR & SWIR)** accessed via Microsoft P
 
 ---
 
+## Study Area Coordinates
+The spatial analysis and sample imagery focus on the vulnerable peatland corridors of Central Kalimantan, Indonesia, defined by the following geographical bounding box:
+* **Area Extent:** Longitude `115.18°E` to `115.28°E`, Latitude `-2.80°S` to `-2.72°S`
+* **Spatial Resolution:** 10m x 10m (Sentinel-2 Native Grid)
+  
+---
+
 ## Key Findings
 
-* **53.63% Forest Degradation Rate:** Out of 94,804 analyzed pixels ($10\text{m} \times 10\text{m}$ spatial resolution), 50,840 pixels exhibited severe canopy loss ($\Delta\text{NDVI} > 0.25$).
+* **53.63% Forest Degradation Rate:** Out of 94,804 analyzed pixels (10m X 10m spatial resolution), 50,840 pixels exhibited severe canopy loss (dNDVI > 0.25).
 * **Permanent Canopy Collapse:** Time-series trendlines confirm that forest loss in this sample area is not a temporary seasonal dip, but a permanent structural degradation[cite: 1].
 * **Peatland Vulnerability:** Fire severity maps highlight clear degradation footprints aligned with human-made drainage canals, turning moisture-rich carbon sinks into fire-prone zones[cite: 1].
 
@@ -19,27 +26,27 @@ Using **Sentinel-2 multispectral imagery (NIR & SWIR)** accessed via Microsoft P
 ## Visualizations
 
 ### 1. 10-Year Canopy Loss (3D Surface Topography)
-A 3D mesh representation of NDVI values showing the structural flattening of the forest canopy between 2016 and 2026[cite: 1].
+A 3D mesh representation of NDVI values showing the structural flattening of the forest canopy between 2016 and 2026.
 
 | 2016 (Dense Forest) | 2026 (Deforestation) |
 | :---: | :---: |
-| *High NDVI peaks indicating healthy canopy*[cite: 1] | *Flattened topography showing 53.6% canopy loss*[cite: 1] |
+| *High NDVI peaks indicating healthy canopy* | *Flattened topography showing 53.6% canopy loss* |
 
 <img width="1724" height="794" alt="3d landscape 2016-2026" src="https://github.com/user-attachments/assets/f57bcee5-28a1-4dc9-a438-45e0ceb620f5" />
 
 ---
 
 ### 2. USGS Burn Severity Mapping (dNBR)
-Burn severity classification using standard USGS thresholds ($\Delta\text{NBR}$) to isolate exact burn scars from healthy vegetation[cite: 1].
+Burn severity classification using standard USGS thresholds (dNBR) to isolate exact burn scars from healthy vegetation.
 
 <img width="919" height="658" alt="USGS Standard Burn map" src="https://github.com/user-attachments/assets/ce6788d3-e742-489f-a324-44b59f1300e9" />
 
 ## Methodology & Tech Stack
 
-* **Data Source:** Sentinel-2 L2A via Planetary Computer STAC API[cite: 1].
+* **Data Source:** Sentinel-2 L2A via Planetary Computer STAC API.
 * **Indices Computed:**
-  * **NDVI** (Normalized Difference Vegetation Index) for active canopy density[cite: 1].
-  * **NBR** (Normalized Burn Ratio) & **dNBR** ($\Delta\text{NBR}$) for fire severity detection[cite: 1].
+  * **NDVI** (Normalized Difference Vegetation Index) for active canopy density.
+  * **NBR** (Normalized Burn Ratio) & **dNBR** (dNBR) for fire severity detection.
 * **Core Libraries:** `pystac_client`, `planetary_computer`, `xarray`, `rioxarray`, `matplotlib`, `numpy`.
 
 ---
@@ -61,6 +68,15 @@ sentinel2-nbr-canopy-collapse/
 
 ---
 
+## Open Source & Collaboration
+This project is fully open-source under the **MIT License**. 
+
+I welcome conservationists, NGO research teams, GIS analysts, and climate advocates to utilize, adapt, or replicate this data pipeline for other forest concessions and peatland areas across Indonesia.
+
+For feedback or collaboration, feel free to open a [GitHub Issue](https://github.com/pathocodes/Sentinel2-nbr-canopy-collapse/issues).
+
+---
+
 ## References & Data Sources
 
 1. **News & Context:** 
@@ -68,5 +84,5 @@ sentinel2-nbr-canopy-collapse/
 2. **Satellite & Remote Sensing Data:**
    * European Space Agency (ESA). *Sentinel-2 MSI (MultiSpectral Instrument) Level-2A Data*. Accessed via Microsoft Planetary Computer STAC API.
 3. **Burn Severity Standards:**
-   * U.S. Geological Survey (USGS). *FireMon: Landscape Assessment (LA) Standard Operating Procedures*. (Normalized Burn Ratio & $\Delta\text{NBR}$ classification thresholds).
+   * U.S. Geological Survey (USGS). *FireMon: Landscape Assessment (LA) Standard Operating Procedures*. (Normalized Burn Ratio & dNBR classification thresholds).
 
