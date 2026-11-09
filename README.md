@@ -4,7 +4,7 @@
 
 During the 2026 dry season, forest and land fires (*karhutla*) swept across key regions in Sumatra, Papua, and Kalimantan (Reuters; Teresia, 2026). This project uses satellite remote sensing to look past the immediate surface haze and evaluate long-term landscape transformation in **Central Kalimantan, Indonesia**.
 
-Using **Sentinel-2 multispectral imagery (NIR & SWIR)** accessed via Microsoft Planetary Computer STAC API, this study tracks Normalized Burn Ratio (NBR) dynamics over a 10-year period (2016–2026). The goal is to separate seasonal drought stress from permanent ecosystem collapse across vulnerable peatlands[cite: 1, 2].
+Using **Sentinel-2 multispectral imagery (NIR & SWIR)** accessed via Microsoft Planetary Computer STAC API, this study tracks Normalized Burn Ratio (NBR) dynamics over a 10-year period (2016–2026). The goal is to separate seasonal drought stress from permanent ecosystem collapse across vulnerable peatlands[1][2].
 
 ---
 
@@ -18,8 +18,8 @@ The spatial analysis and sample imagery focus on the vulnerable peatland corrido
 ## Key Findings
 
 * **53.63% Forest Degradation Rate:** Out of 94,804 analyzed pixels (10m X 10m spatial resolution), 50,840 pixels exhibited severe canopy loss (dNDVI > 0.25).
-* **Permanent Canopy Collapse:** Time-series trendlines confirm that forest loss in this sample area is not a temporary seasonal dip, but a permanent structural degradation[cite: 1].
-* **Peatland Vulnerability:** Fire severity maps highlight clear degradation footprints aligned with human-made drainage canals, turning moisture-rich carbon sinks into fire-prone zones[cite: 1].
+* **Permanent Canopy Collapse:** Time-series trendlines confirm that forest loss in this sample area is not a temporary seasonal dip, but a permanent structural degradation[1].
+* **Peatland Vulnerability:** Fire severity maps highlight clear degradation footprints aligned with human-made drainage canals, turning moisture-rich carbon sinks into fire-prone zones[1].
 
 ---
 
